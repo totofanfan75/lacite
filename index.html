@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cité - Société d'Histoire et d'Archéologie</title>
+    <meta name="description" content="Découvrez l'histoire et l'archéologie des 3e, 4e, 11e et 12e arrondissements de Paris avec La Cité.">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.16/css/uikit.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.16/js/uikit.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+        /* Conteneur pour aligner les images en haut */
+        .top-container {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centre horizontalement */
+            padding: 20px 0;
+            position: relative;
+        }
+        /* Image en haut à gauche */
+        .logo-top-left {
+            position: absolute;
+            top: 10px;
+            left: 50px;
+            width: 170px;
+            height: auto;
+            z-index: 100;
+        }
+        /* Image centrée en haut */
+        .title-image {
+            max-width: 50%;
+            height: auto;
+        }
+        .title-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        /* Image centrée en haut */
+        .title-image {
+            max-width: 50%;
+             height: auto;
+        }
+        /* Navigation déplacée sous l'image */
+        .navbar-container {
+            margin-top: 20px;
+        }
+        /* Déplace "La Cité" plus à gauche sans toucher le reste */
+        .uk-navbar-left {
+            position: absolute;
+            left: 20px;
+        }
+        /* Centrer les onglets */
+        .uk-navbar-nav {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        /* Ajuster le header */
+        .uk-navbar-container {
+            position: relative;
+            z-index: 10;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Conteneur pour aligner les images en haut -->
+    <div class="top-container">
+        <!-- Image en haut à gauche -->
+        <a href="index.html">
+            <img src="../SITE/images/La Cité.png" alt="Logo en haut à gauche" class="logo-top-left">
+        </a>
+        <!-- Image centrée en haut -->
+        <a href="index.html" class="title-container">
+            <img src="../SITE/images/image.png" alt="Titre de La Cité" class="title-image">
+        </a>
+    </div>
+
+    <!-- Navigation déplacée sous l'image -->
+    <header class="uk-navbar-container navbar-container">
+        <div class="uk-container">
+            <nav class="uk-navbar">
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="activites.html">Activités</a></li>
+                        <li><a href="adhesion.html">Adhésion</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="uk-container">
+        <section class="uk-section">
+            <div class="uk-grid uk-child-width-1-2@m" uk-grid>
+                <div class="content-section">
+                    <h3>Notre Mission</h3>
+                    <p>Préserver et étudier le patrimoine historique et archéologique des arrondissements parisiens.</p>
+                    <a href="presentation.html" class="uk-button uk-button-primary">En savoir plus</a>
+                </div>
+                <div class="content-section">
+                    <h3>Nos Activités</h3>
+                    <p>Nous organisons des conférences, des visites guidées et des expositions culturelles.</p>
+                    <a href="activites.html" class="uk-button uk-button-primary">Découvrir</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="uk-section">
+            <div class="uk-grid uk-child-width-1-2@m" uk-grid>
+                <div class="content-section">
+                    <h3>Rejoignez-nous</h3>
+                    <p>Devenez membre et participez à nos événements exclusifs.</p>
+                    <a href="adhesion.html" class="uk-button uk-button-primary">Adhérer</a>
+                </div>
+                <div class="content-section">
+                    <h3>Contactez-nous</h3>
+                    <p>Avez-vous des questions ? Contactez-nous pour en savoir plus.</p>
+                    <a href="contact.html" class="uk-button uk-button-primary">Nous écrire</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="uk-section uk-section-secondary">
+        <div class="uk-container uk-text-center">
+            <p>&copy; 2025 La Cité, Société d'Histoire et d'Archéologie. Tous droits réservés.</p>
+            <p><a href="mentions-legales.html">Mentions légales</a> | <a href="contact.html">Contact</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
